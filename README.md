@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+# 🧠 AI-PPT Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AI-PPT Generator** is a modern React application that transforms your ideas into professional presentations using artificial intelligence. Designed for speed, security, and visual impact, it combines powerful tools to deliver a seamless experience from login to slide export.
 
-Currently, two official plugins are available:
+## 🔧 Tech Stack Highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Clerk**  
+  Secure, scalable authentication with support for email, social logins, and session management.
 
-## React Compiler
+- **Firebase**  
+  Real-time data storage, cloud functions, and collaborative editing.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **ImageKit**  
+  Fast, optimized image delivery with smart transformations and CDN support.
 
-## Expanding the ESLint configuration
+## 🚀 Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **AI-Powered Slide Creation**  
+  Input a topic or outline, and let the AI generate structured slides with text and visuals.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Live Editing**  
+  Customize slides with drag-and-drop components and real-time updates.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Export Options**  
+  Download as PDF, PPTX, or share via link.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Responsive Design**  
+  Works beautifully across desktop and mobile.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Dark Mode & Accessibility**  
+  Inclusive design for all users.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔗 Perfect For
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Students creating academic presentations  
+- Professionals pitching ideas or reports  
+- Developers showcasing projects with AI flair
+
+## 💡 Tagline Ideas
+
+> “From idea to impact — generate stunning slides with AI in seconds.”
+
+> “Smart slides. Zero effort. Just type and go.”
