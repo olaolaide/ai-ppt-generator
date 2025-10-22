@@ -2,8 +2,8 @@ import {Outlet} from "react-router";
 
 function Workspace() {
     return (
-        <div>Workspace
-
+        <div>
+            Workspace
             <Outlet/>
         </div>
     );
