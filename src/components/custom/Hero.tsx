@@ -2,6 +2,7 @@ import {Button} from "@/components/ui/button.tsx";
 import {Play} from "lucide-react";
 import {HeroVideoDialog} from "@/components/ui/hero-video-dialog.tsx";
 import {useUser, SignInButton} from "@clerk/clerk-react";
+import {Link} from "react-router";
 
 function Hero() {
     const {user} = useUser()
@@ -28,7 +29,9 @@ function Hero() {
                     <SignInButton mode='modal'>
                         <Button size='lg'>Get Started</Button>
                     </SignInButton> :
-                    <Button size='lg'>Go to workspace</Button>
+                    <Link to='/workspace'>
+                        <Button>Go to workspace</Button>
+                    </Link>
                 }
             </div>
 
